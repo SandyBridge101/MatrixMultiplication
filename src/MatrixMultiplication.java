@@ -39,7 +39,11 @@ public class MatrixMultiplication {
             }
         }
 
-
+        //exception if the dimension contraints aren't met
+        if (matrixA[0].length != matrixB.length) {
+            System.out.println("Dimension Mismatch");
+            return;
+        }
 
         int n=matrixA.length;//number of rows in matrix A
         int m=matrixB[0].length;//number of columns in matrix B
